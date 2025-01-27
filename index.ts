@@ -9,3 +9,7 @@ function isAbove18(age: number) {
 function newFn() {
   console.log("Hey! I am new function.");
 }
+
+function newFeatureAdd() {
+  console.log(`New featue added!`);
+}
