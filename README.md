@@ -305,3 +305,107 @@ git status
   ![staging5](Images/staging5.png)
 
 ![staging6](Images/staging6.png)
+![staging7](Images/staging7.png)
+![staging8](Images/staging8.png)
+![staging9](Images/staging9.png)
+
+---
+
+## Reverting Back:
+
+- So, in this case, our commit history works very smooth here.
+- If our commits are very clean, then its become easy for us to revert back.
+
+- For this, we have to understand **HEAD**
+  ![head](Images/head.png)
+
+- Here, we can see head always points to the latest commit, its basically looks like a linked list.
+
+- Lets understand this concept by an example.
+
+```js
+// utils/add.js
+function add(a, b) {
+  console.log(`The sum of ${a} and ${b} is: ${a + c}.`);
+}
+// here we have seen the
+```
+
+- So, after commiting this file:
+
+![revert1](Images/revert1.png)
+![faultycommit](Images/faultycommit.png)
+
+- So, we can point the **HEAD** to the previous commit.
+  ![faultytookdgm](Images/faultytookdgm.png)
+
+- So, now we can run:
+
+```
+git reset hard <commit_id>
+```
+
+![reset hard](Images/git%20reset%20hard%201.png)
+
+- And now our code also have been changed:
+
+```js
+function add(a, b) {
+  console.log(`The sum of ${a} and ${b} is: ${a + b}.`);
+}
+// var c has been removed and b has come back.
+```
+
+- Now the diagram will be:
+
+![reset hard dgm](Images/resetharddgm.png)
+
+- Its fine but we have lost that commit. But all tym we don't need this. Maybe some important code was there.
+
+- SO, this way we can revert back in one way.
+
+- But we need that particular code to be revert.
+
+- Let say, we want to get back the remove isAbove18 function.
+
+```ts
+const myName1: string = "Kanad";
+
+function sayName() {
+  console.log(`My name is: `, myName1);
+}
+function isAbove18(age: number) {
+  return age >= 18;
+}
+function newFn() {
+  console.log("Hey! I am new function.");
+}
+```
+
+- This has get back our **isAbove18()** function.
+
+- We just need to run:
+
+```
+git revert <that_commit_id>
+```
+
+![revert 2](Images/revert2.png)
+
+- Here, one thing to notice:
+
+  - Merge conflicts may come.
+  - Means, it do one things: it get back all things before that commit and will try to remove all thing added after that commit.
+  - So, we can see that index.ts file has been modified.
+
+- And now we can add the latest change and commit as index.ts file has been modified.
+
+![revert 3](Images/revert3.png)
+
+- So, it has made a new commit and if we see that commit by:
+
+```
+git show df0009e
+```
+
+- we can see that it has reversed the changes whatever new change we have made woth the previous
