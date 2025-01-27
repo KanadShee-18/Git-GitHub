@@ -242,3 +242,66 @@ git diff .\index.ts
 
 ![changeinindex](Images/new%20chng.png)
 
+- Now, we have to run **"git add ."** and then **git commit -m "<message>"** to commit these changes.
+
+![commit2](Images/commit2.png)
+
+- Then, we can see the change by running **git log**
+
+![git log2](Images/git%20log2.png)
+![track2](Images/track2.png)
+
+- > NOTE: We can notice a thing that head is pointing to the latest commit
+
+- Using this commit id we can see what changes have been made:
+
+```
+git show <commit_id>
+```
+
+- This will show all the changes in that commit id
+
+- One more command to checkout:
+
+```
+git blame <file_path>
+```
+
+![git blame](Images/git%20blame.png)
+
+- This command will show us changes in each line by which author and in which commit it has been changed.
+
+- Lets remove the isAbove18 function and see:
+
+![threein1](Images/3in1.png)
+
+- Here we can see all these things in a single image
+- Here one more commit has been done.
+
+![track3](Images/track3.png)
+
+---
+
+## Staging Area:
+
+- Lets make some changes in our index.ts file and we can see status of changes by running:
+
+```
+git status
+```
+
+![staging1](Images/staging1.png)
+
+![staging2](Images/staging2.png)
+![staging3](Images/staging3.png)
+
+- Here, in green line we can see the changes in staging and in red line those are local changes.
+
+- So, now in our staging area index.ts file will come.
+
+![staging4](Images/staging4.png)
+
+- Now if we see:
+  ![staging5](Images/staging5.png)
+
+![staging6](Images/staging6.png)
