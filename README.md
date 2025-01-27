@@ -307,7 +307,6 @@ git status
 ![staging6](Images/staging6.png)
 ![staging7](Images/staging7.png)
 
-
 ---
 
 ## Reverting Back:
@@ -411,7 +410,8 @@ git show df0009e
 
 ## So, here Git basics and some intermediate things have been done.
 
+![diagram](Images/diagram.png)
+
 ---
 
 ## Collaboration:
-
