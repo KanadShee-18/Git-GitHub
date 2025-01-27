@@ -14,3 +14,8 @@ function newFeatureAdd() {
   console.log(`New featue added!`);
   console.log(`New featue added a!`);
 }
+
+function newFeatureAddNew() {
+  console.log(`New featue added new!`);
+  console.log(`New featue added a new!`);
+}
