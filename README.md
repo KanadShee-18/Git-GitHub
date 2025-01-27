@@ -181,3 +181,64 @@ git add .
 
 - With commit we also have to add an user friendly message.
 
+- So, we can see some changes:
+
+![git commit](Images/git%20commit%20cmd.png)
+![git commit files](Images/aftergitcommit.png)
+
+- Here, we can that till now whatever changes made have been commited and any time we can get back to it or can see when what file has been changed.
+
+- We can track our commits and see commits history by running:
+
+```
+git log
+```
+
+![git log](Images/git%20log.png)
+
+- Here we can see:
+
+  - Each commit has an id.
+  - Has its author name.
+  - Has its author email.
+  - When the commit has been done.
+  - The message with the commit.
+
+- And to see the commits in single line or shortly, we can run:
+
+```
+git log --oneline
+```
+
+![git log oneline](Images/git%20log%20oneline.png)
+
+- So, we can see and unique part of the commit id with its message.
+
+- Here's a track of commits:
+
+![commit1](Images/trackcommit1.png)
+
+- Now, lets make some changes:
+
+```ts
+const myName1: string = "Kanad";
+
+function sayName() {
+  console.log(`My name is: `, myName1);
+}
+
+function isAbove18(age: number) {
+  return age >= 18;
+}
+```
+
+- Here some changes have done and new function isAbove18() is added.
+
+- And by running command we can see the changes:
+
+```
+git diff .\index.ts
+```
+
+![changeinindex](Images/new%20chng.png)
+
