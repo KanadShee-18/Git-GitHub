@@ -306,8 +306,7 @@ git status
 
 ![staging6](Images/staging6.png)
 ![staging7](Images/staging7.png)
-![staging8](Images/staging8.png)
-![staging9](Images/staging9.png)
+
 
 ---
 
@@ -409,3 +408,10 @@ git show df0009e
 ```
 
 - we can see that it has reversed the changes whatever new change we have made woth the previous
+
+## So, here Git basics and some intermediate things have been done.
+
+---
+
+## Collaboration:
+
