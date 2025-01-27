@@ -414,4 +414,94 @@ git show df0009e
 
 ---
 
-## Collaboration:
+## Github:
+
+- Make a repository in GitHub.
+- Then come to local and after running commands:
+
+```
+git add .
+git commit -m <message>
+```
+
+- Now, we have to set a remote server. For that:
+
+```
+git remote add origin <repo link>
+```
+
+- Then, push code to github
+
+```
+git push -U origin main
+```
+
+---
+
+## Git Branches:
+
+- By default we work on main branch.
+
+- But in real world or for the ease of work, work done in multiple branches.
+
+  - Feat
+  - Bugs
+    etc.
+
+- So to see the branch in which we are working right now:
+
+```
+git branch
+```
+
+- To create a new branch:
+
+```
+git branch "feat/chat-support"
+```
+
+- Now to switch to that branch:
+
+```
+git checkout feat/chat-support
+```
+
+- Or, to directly create a branch and switch to it by:
+
+```
+git checkout -b <branch_name>
+```
+
+---
+
+## Merging Branches:
+
+- > Merge
+
+```
+git merge origin/<branch-name>
+```
+
+- > Rebase
+
+```
+git rebase origin/feat-c
+```
+
+---
+
+## Stashing:
+
+- Temporarily store tracked/modified files in order to aply branches
+
+```
+git stash
+```
+
+```
+git pull
+```
+
+```
+git stash apply
+```
