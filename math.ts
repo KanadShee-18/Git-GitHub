@@ -7,3 +7,7 @@ function substractNums(a: number, b: number) {
 function multiplyNums(a: number, b: number) {
   console.log(`The multiplication of ${a} and ${b} is: ${a * b}`);
 }
+
+function divideNums(a: number, b: number) {
+  console.log(`The division of ${a} and ${b} is: ${a / b}`);
+}
